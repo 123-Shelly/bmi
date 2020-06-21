@@ -1,0 +1,16 @@
+<h1 style="color: #9ac; font-family: 微軟正黑體;">使用者登入</h1>
+
+ <%= form_for @user, url: items_path, method: :post do |f| %>
+
+ 	<%= f.label :username, '帳號' %>
+ 	<%= f.text_field :username %>
+
+ 	<%= f.label :email, 'Email' %>
+ 	<%= f.text_field :email %>
+
+ 	<%= f.label :password, '密碼' %>
+ 	<%= f.text_field :password %>
+
+ 	<%= f.submit '送出' %>
+
+<% end %>
